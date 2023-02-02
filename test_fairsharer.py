@@ -1,8 +1,6 @@
-import unittest
+import fairsharer
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)
 
-if __name__ == '__main__':
-    unittest.main()
+def test_fair_sharer():
+
+    assert fairsharer.fair_sharer([0, 1000, 800, 1100], 2) == [210.0, 800.0, 1010.0, 880.0]
